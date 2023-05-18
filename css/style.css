@@ -1,0 +1,293 @@
+/*Styles de menu*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-home{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: url(/img/ge4lo0hcymu71.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.logo{
+    height: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 900;
+    padding-right: 10px;
+    color: #111111;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.caja-father{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caja1 {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.caja1 h1 {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    mix-blend-mode: difference;
+    padding-bottom: 100px;    
+}
+
+
+.caja1 a button {
+    padding: 10px;
+    background-color: #111111;
+    font-size: 25px;
+    color: aliceblue;
+    border-radius: 95px;
+    background: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8.5px);
+}
+
+.caja1 a button:hover {
+    color: pink;
+    font-weight: bold;
+
+}
+
+/*Styles de CONTACTOS.HMTL*/
+
+.contactos{
+    background-image: url(/img/pxfuel.jpg);
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+}
+
+.contact-titulo{
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.contact-container h2{
+    padding: 10px;
+}
+
+.contact-container{
+    width: 500px;
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.contact-container div{
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-container input{
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+/*Styles de productos.html*/
+
+.products-father{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr; 
+    justify-items: center;
+    align-items: center;
+}
+
+.hr-line{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card{
+    width: 300px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-body{
+    padding: 20px;
+    text-align: start;
+}
+
+.button-card{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #111111;
+}
+
+.button-card a{
+    border-radius: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/*Styles de sobre nosotros*/
+.about-father{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "fila1" "fila2";
+    grid-template-rows: 0.5fr 0.5fr;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.about-title{
+    display: flex;
+    justify-content: center;
+}
+
+.about-img{
+    margin: 100px;
+}
+
+.about-img-1{
+    display: flex;
+    flex-direction: column;
+}
+
+    
+/*Styles de PERSONAL*/
+
+
+.personal{
+    background-color: #FFFFFF;
+}
+
+.personal-card{
+    width: 300px;
+    background-color: transparent;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.personal-card img{
+    width: 100%;
+}
+
+.personal-body{
+    text-align: center;
+    padding: 10px;
+}
+
+.personal-button-card{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #111111;
+}
+
+.personal-button-card a{
+    border-radius: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*Styles de footer*/
+.container-footer-personal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+}
+
+footer p{
+    font-size: small;
+}
+
+footer a img{
+    width: 25px;
+}
+
+/* STYLE MEDIAQUERRY */
+
+@media (max-width: 720px) {
+    /* Productos */
+    .products-father{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    /* Index */
+    .caja1 h1{
+        font-size: 60px;
+    }
+    .caja1 a button{
+        font-size: 15px;
+    }
+    /* PERSONAL */
+    .personal-container{
+    display: flex;
+    justify-content: center;
+   }
+
+}
+
+/* Styles NavBar Boostrap */
+.navbar-collapse{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar :hover{
+    color: pink;
+}
+
+.col{
+    display: flex;
+    justify-content: space-around;
+    
+}
