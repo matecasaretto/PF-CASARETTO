@@ -13,8 +13,7 @@
     background: url(/img/home.jpg);
     background-size: cover;
     background-position: center;
-
-
+    
 }
 
 .logo{
@@ -273,7 +272,8 @@ footer a img{
     display: flex;
     justify-content: center;
    }
-
+   
+   
 }
 
 /* Styles NavBar Boostrap */
