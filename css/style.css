@@ -10,7 +10,7 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background: url(/img/home.jpg);
+    background: url(../img/home.jpg);
     background-size: cover;
     background-position: center;
     
@@ -74,7 +74,7 @@ nav a {
 /*Styles de CONTACTOS.HMTL*/
 
 .contactos{
-    background-image: url(/img/pxfuel.jpg);
+    background-image: url(../img/pxfuel.jpg);
 }
 
 .contact{
