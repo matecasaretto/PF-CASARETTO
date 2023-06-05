@@ -1,0 +1,18 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes animation {
+    from {
+        transform: translateY(50vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+    }
+}

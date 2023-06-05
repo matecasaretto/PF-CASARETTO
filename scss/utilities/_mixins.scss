@@ -1,0 +1,12 @@
+@mixin box ($display:felx, $direction:column, $content:center, $aling:center, $items:center){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+    text-align: $aling;
+    align-items: $items;
+}
+
+@mixin transform {
+    transform: skewY(2deg);
+}
+

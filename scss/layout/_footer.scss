@@ -1,0 +1,12 @@
+.container-footer-personal{
+    @include box;
+    padding-top: 80px;
+    p{
+        font-size: small;
+    }
+    img{
+        width: 25px;
+    }
+}
+
+

@@ -1,0 +1,93 @@
+.main-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    .container-about{
+        @media (max-width: 840px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+  }
+  
+  .hero {
+    @include box (flex, column, center);
+    justify-content: start;
+    flex-direction: row;
+    background-color: map-get($map: $color, $key: fifth);
+    padding: 20px;
+    @media (max-width: 540px) {
+        grid-column: 1/3;
+        align-items: center;
+    }
+    @media (max-width: 840px) {
+      flex-direction: column;
+    }
+  }
+  
+  .hero img {
+    animation: slide-in 1s ease;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+  }
+  
+  .info a img {
+    animation: slide-in 1s ease;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .content {
+    @include box (flex, column, center);
+    grid-row: 1/3;
+    padding: 20px;
+    display: flex;
+    font-size: 30px;
+    background-color: map-get($map: $color, $key: fifth);
+    @media (max-width: 840px) {
+        grid-column: 1/3;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  .content img {
+    justify-content: center;
+    height: 800px;
+    width: 500px;
+    @media (max-width: 540px) {
+        height: 400px;
+        width: 300px;
+    }
+  }
+  
+  .content h3 {
+    font-size: 40px;
+  }
+  
+  .sidebar {
+    padding: 20px;
+  }
+  
+  .moon {
+    @include box;
+    grid-column: 1/3;
+    padding: 20px;
+    background-color: map-get($map: $color, $key: fifth);
+  
+    button {
+      padding: 5px;
+      border-radius: 20px;
+      text-decoration: none;
+      &:hover{
+        color: map-get($map: $color, $key: primary);
+      }
+    }
+  
+    h3 {
+      text-align: center;
+    }
+  }

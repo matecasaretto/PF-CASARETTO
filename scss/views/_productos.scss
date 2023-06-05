@@ -1,0 +1,45 @@
+.productos{
+    min-height: 100%;
+    background-image: linear-gradient(to top, pink, aliceblue);
+}
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.container{
+    @include box;
+    .col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+.card{
+    width: 300px;
+    border-color: map-get($map: $color, $key: secondary);
+    background-color: map-get($map: $color, $key: transparent);
+    border-radius: 20px;
+    align-items: center;
+    img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .card-body{
+        padding: 20px;
+        text-align: start;
+        .button-card{
+            border-radius: 20px;
+            padding: 5px;
+            &:hover {
+                @include transform;
+            }
+            a{
+                color: map-get($map: $color, $key: quarter);
+                border-radius: 20px;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,364 @@
+.color-primary {
+  color: pink;
+}
+
+.color-secondary {
+  color: aliceblue;
+}
+
+.color-tertiary {
+  color: grey;
+}
+
+.color-quarter {
+  color: black;
+}
+
+.color-fifth {
+  color: #f2f2f2;
+}
+
+.color-six {
+  color: transparent;
+}
+
+.fuentes-roman {
+  font-family: times;
+}
+
+.fuentes-sans {
+  font-family: sans-serif;
+}
+
+.fuentes-arial {
+  font-family: arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(50vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes animation {
+  from {
+    transform: translateY(50vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.home-home {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background: url(../img/home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.caja1 {
+  display: felx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 40px;
+  margin-top: 10px;
+}
+.caja1 h1 {
+  animation: slide-in 1s ease;
+  color: aliceblue;
+  font-size: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  mix-blend-mode: difference;
+  padding-bottom: 100px;
+}
+@media (max-width: 540px) {
+  .caja1 h1 {
+    font-size: 70px;
+  }
+}
+.caja1 a button {
+  animation: slide-in 1s ease;
+  color: aliceblue;
+  padding: 10px;
+  font-size: 25px;
+  background: grey;
+  border-radius: 25px;
+  mix-blend-mode: normal;
+  -webkit-backdrop-filter: blur(8.5px);
+          backdrop-filter: blur(8.5px);
+}
+.caja1 a button:hover {
+  font-weight: bold;
+  color: pink;
+  transform: skewY(2deg);
+}
+
+.contactos {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, pink, aliceblue);
+}
+
+.contact {
+  animation: animation 1s ease;
+  padding: 0px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-container {
+  width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+.contact .contact-container input {
+  border-radius: 10px;
+  padding: 5px;
+}
+.contact .contact-container .contact-titulo {
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+}
+.contact .contact-container .contact-titulo h2 {
+  padding: 10px;
+}
+
+.productos {
+  min-height: 100%;
+  background-image: linear-gradient(to top, pink, aliceblue);
+}
+
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container {
+  display: felx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.container .card {
+  width: 300px;
+  border-color: aliceblue;
+  border-radius: 20px;
+  align-items: center;
+}
+.container .card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.container .card .card-body {
+  padding: 20px;
+  text-align: start;
+}
+.container .card .card-body .button-card {
+  border-radius: 20px;
+  padding: 5px;
+}
+.container .card .card-body .button-card:hover {
+  transform: skewY(2deg);
+}
+.container .card .card-body .button-card a {
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.sobre-nosotros-body {
+  background-image: linear-gradient(to top, pink, aliceblue);
+}
+
+.about-title {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-imgs {
+  display: felx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.about-imgs img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 840px) {
+  .main-about .container-about {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+@media (max-width: 540px) {
+  .hero {
+    grid-column: 1/3;
+    align-items: center;
+  }
+}
+@media (max-width: 840px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+.hero img {
+  animation: slide-in 1s ease;
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.info a img {
+  animation: slide-in 1s ease;
+  height: 30px;
+  width: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-row: 1/3;
+  padding: 20px;
+  display: flex;
+  font-size: 30px;
+  background-color: #f2f2f2;
+}
+@media (max-width: 840px) {
+  .content {
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content img {
+  justify-content: center;
+  height: 800px;
+  width: 500px;
+}
+@media (max-width: 540px) {
+  .content img {
+    height: 400px;
+    width: 300px;
+  }
+}
+
+.content h3 {
+  font-size: 40px;
+}
+
+.sidebar {
+  padding: 20px;
+}
+
+.moon {
+  display: felx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-column: 1/3;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.moon button {
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.moon button:hover {
+  color: pink;
+}
+.moon h3 {
+  text-align: center;
+}
+
+.navbar {
+  background-image: radial-gradient(circle, white, aliceblue);
+}
+.navbar .logo {
+  height: 70px;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 900;
+  padding-right: 10px;
+  color: black;
+}
+.navbar a:hover {
+  color: pink;
+  transform: skewY(2deg);
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
+}
+
+.container-footer-personal {
+  display: felx;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.container-footer-personal p {
+  font-size: small;
+}
+.container-footer-personal img {
+  width: 25px;
+}/*# sourceMappingURL=main.css.map */

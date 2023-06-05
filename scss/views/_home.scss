@@ -1,0 +1,41 @@
+.home-home{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja1{
+    @include box;
+    padding-top: 40px;
+    margin-top: 10px;
+    h1{
+        animation: slide-in 1s ease;
+        color: map-get($map: $color, $key: secondary);
+        font-size: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        mix-blend-mode: difference;
+        padding-bottom: 100px;
+        @media (max-width: 540px) {
+            font-size: 70px;
+        }
+    }
+    a{
+        button{
+            animation: slide-in 1s ease;
+            color: map-get($map: $color, $key: secondary);
+            padding: 10px;
+            font-size: 25px;
+            background: map-get($map: $color, $key: tertiary);
+            border-radius: 25px;
+            mix-blend-mode: normal;
+            backdrop-filter: blur(8.5px);
+            &:hover{
+                font-weight: bold;
+                color: map-get($map: $color, $key: primary);
+                @include transform;
+            }
+        }
+    }
+}

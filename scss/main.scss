@@ -1,0 +1,21 @@
+@import "../scss/utilities/variables";
+@import "../scss/base/reset";
+
+//mixins
+@import "../scss/utilities/mixins";
+
+//Keyframes
+@import "../scss/keyframes/keyframes";
+// Views
+@import "../scss/views/home";
+@import "../scss/views/contactos";
+@import "../scss/views/productos";
+@import "../scss/views/sobre-nosotros";
+@import "../scss/views/personal";
+
+// Layaout
+@import "../scss/layout/header";
+@import "../scss/layout/footer";
+
+
+

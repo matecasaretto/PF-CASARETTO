@@ -1,0 +1,24 @@
+$color: (
+    primary: pink,
+    secondary: aliceblue,
+    tertiary: grey,
+    quarter: black,
+    fifth: #f2f2f2,
+    six: transparent,
+);
+$fuentes: (
+    roman: times,
+    sans: sans-serif,
+    arial: arial
+);
+@each $key, $value in $color{
+    .color-#{$key}{
+        color: $value;
+    }
+}
+@each $key, $value in $fuentes{
+    .fuentes-#{$key}{
+        font-family: $value;
+    }
+}
+

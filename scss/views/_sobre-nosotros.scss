@@ -1,0 +1,15 @@
+.sobre-nosotros-body{
+    background-image: linear-gradient(to top, pink, aliceblue);
+}
+.about-title{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.about-imgs{
+    @include box;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
