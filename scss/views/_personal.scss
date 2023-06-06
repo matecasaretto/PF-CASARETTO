@@ -14,7 +14,6 @@
   
   .hero {
     @include box (flex, column, center);
-    justify-content: start;
     flex-direction: row;
     background-color: map-get($map: $color, $key: fifth);
     padding: 20px;
