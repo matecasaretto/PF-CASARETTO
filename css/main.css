@@ -69,6 +69,7 @@
 }
 
 .caja1 {
+  min-height: calc(100vh - 100px - 300px);
   display: felx;
   flex-direction: column;
   justify-content: center;
@@ -112,34 +113,50 @@
   background-image: linear-gradient(to top, pink, aliceblue);
 }
 
-.contact {
-  animation: animation 1s ease;
-  padding: 0px;
-  flex-direction: row;
+.contact-titulo {
+  padding-top: 40px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.contact .contact-container {
-  width: 500px;
-  margin: 0 auto;
-  background-color: transparent;
+
+.contact-container {
+  min-height: calc(100vh - 100px - 300px);
+  padding-left: 5px;
+  animation: animation 2s ease;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.contact-container .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  .contact-container .map {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.contact-container .formulario {
+  box-shadow: 5px 5px 5px 5px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .formulario h2 {
+  align-items: center;
   text-align: center;
-  padding: 30px;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
 }
-.contact .contact-container input {
-  border-radius: 10px;
-  padding: 5px;
-}
-.contact .contact-container .contact-titulo {
+.contact-container .contact-titulo {
   text-align: center;
   padding: 10px;
   align-items: center;
-}
-.contact .contact-container .contact-titulo h2 {
-  padding: 10px;
 }
 
 .productos {
@@ -326,6 +343,11 @@
   text-align: center;
 }
 
+.not-found {
+  min-height: 100%;
+  min-width: 100%;
+}
+
 .navbar {
   background-image: radial-gradient(circle, white, aliceblue);
 }
@@ -355,6 +377,10 @@
   text-align: center;
   align-items: center;
   padding-top: 80px;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
 }
 .container-footer-personal p {
   font-size: small;

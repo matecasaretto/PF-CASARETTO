@@ -2,32 +2,45 @@
     min-height: 100vh;
     background-image: linear-gradient(to top, pink, aliceblue);
 }
-.contact{
-    animation: animation 1s ease;
-    padding: 0px;
-    flex-direction: row;
+.contact-titulo{
+    padding-top: 40px;
     display: flex;
+    align-items: center;
     justify-content: center;
+} 
     .contact-container{
-        width: 500px;
-        margin: 0 auto;
-        background-color: transparent;
-        text-align: center;
-        padding: 30px;
-        padding-top: 100px;
-        padding-bottom: 50px;
-        border-radius: 20px;
-        input{
-            border-radius: 10px;
-            padding: 5px;
+        min-height: calc(100vh - 100px - 300px);
+        padding-left: 5px;
+        animation: animation 2s ease;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        .map{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 990px) {
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+        }
+        .formulario{
+            box-shadow: 5px 5px 5px 5px;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                padding: 10px;
+            }
         }
         .contact-titulo{
             text-align: center;
             padding: 10px;
             align-items: center;
-            h2{
-                padding: 10px;
-            }
         }
     }
-}

@@ -8,6 +8,7 @@
     background-position: center;
 }
 .caja1{
+    min-height: calc(100vh - 100px - 300px);
     @include box;
     padding-top: 40px;
     margin-top: 10px;
